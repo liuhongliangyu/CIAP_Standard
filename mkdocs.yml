@@ -1,0 +1,69 @@
+site_name: CIAP Standard
+site_description: Composable Intelligent Application Platform Standard
+site_url: https://example.github.io/ciap-standard/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Foundation:
+      - Overview: foundation/index.md
+      - CIAP-0000 Meta Model: foundation/CIAP-0000-Meta-Model.md
+      - CIAP-0001 Constitution: foundation/CIAP-0001-Constitution.md
+      - CIAP-0002 Terminology: foundation/CIAP-0002-Terminology.md
+      - CIAP-0003 Product Boundary: foundation/CIAP-0003-Product-Boundary.md
+      - CIAP-0004 Design Principles: foundation/CIAP-0004-Design-Principles.md
+  - Architecture:
+      - Overview: architecture/index.md
+  - Specification:
+      - Overview: specification/index.md
+  - SDK:
+      - Overview: sdk/index.md
+  - Runtime:
+      - Overview: runtime/index.md
+  - Platform:
+      - Overview: platform/index.md
+  - Studio:
+      - Overview: studio/index.md
+  - Governance:
+      - Overview: governance/index.md
+  - ADR:
+      - Overview: adr/index.md
+  - RFC:
+      - Overview: rfc/index.md
+  - Roadmap:
+      - Overview: roadmap/index.md

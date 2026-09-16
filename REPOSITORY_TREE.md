@@ -1,0 +1,69 @@
+# Repository Tree
+
+- .editorconfig
+- .gitattributes
+- .github/
+  - ISSUE_TEMPLATE/
+    - architecture-change.md
+    - documentation.md
+  - PULL_REQUEST_TEMPLATE.md
+  - workflows/
+    - docs.yml
+- .gitignore
+- CHANGELOG.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- README.md
+- diagrams/
+  - architecture/
+    - README.md
+  - foundation/
+    - README.md
+  - platform/
+    - README.md
+  - runtime/
+    - README.md
+- docs/
+  - adr/
+    - ADR-0000-Template.md
+    - index.md
+  - architecture/
+    - index.md
+  - foundation/
+    - CIAP-0000-Meta-Model.md
+    - CIAP-0001-Constitution.md
+    - CIAP-0002-Terminology.md
+    - CIAP-0003-Product-Boundary.md
+    - CIAP-0004-Design-Principles.md
+    - index.md
+  - governance/
+    - index.md
+  - index.md
+  - platform/
+    - index.md
+  - rfc/
+    - RFC-0000-Template.md
+    - index.md
+  - roadmap/
+    - index.md
+  - runtime/
+    - index.md
+  - sdk/
+    - index.md
+  - specification/
+    - index.md
+  - studio/
+    - index.md
+- examples/
+  - README.md
+- mkdocs.yml
+- pyproject.toml
+- requirements.txt
+- schemas/
+  - README.md
+- scripts/
+  - validate_repo.py
+- templates/
+  - adr-template.md
+  - document-template.md
+  - rfc-template.md

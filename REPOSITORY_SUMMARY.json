@@ -1,0 +1,9 @@
+{
+  "repository": "ciap-standard",
+  "version": "0.1.0",
+  "markdown_files": 35,
+  "foundation_documents_completed": 5,
+  "git_ready": true,
+  "mkdocs_ready": true,
+  "github_actions_ready": true
+}

@@ -1,0 +1,15 @@
+[project]
+name = "ciap-standard"
+version = "0.1.0"
+description = "CIAP platform standards and architecture documentation"
+requires-python = ">=3.11"
+
+[tool.ciap]
+document_source = "docs"
+normative_root = [
+  "CIAP-0000",
+  "CIAP-0001",
+  "CIAP-0002",
+  "CIAP-0003",
+  "CIAP-0004"
+]
