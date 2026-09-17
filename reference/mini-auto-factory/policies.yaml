@@ -1,0 +1,23 @@
+policies:
+  routing:
+    implementation: routing.a-star
+
+  dispatch:
+    implementation: dispatch.nearest-available
+    parameters:
+      minSoc: 20
+
+  traffic:
+    implementation: traffic.segment-reservation
+
+  queue:
+    implementation: queue.fifo
+
+  charging:
+    implementation: charging.soc-threshold
+    parameters:
+      triggerSoc: 20
+      resumeSoc: 80
+
+  scheduling:
+    implementation: scheduling.fifo

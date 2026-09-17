@@ -1,156 +1,81 @@
-# CIAP Standard
+# CIAP Platform Bootstrap v0.1
 
-**CIAP — Composable Intelligent Application Platform**
+> **Composable Industrial Application Platform**
 
-CIAP Standard 是 CIAP 平台的规范、架构、治理和参考实现文档仓库。
+这是 CIAP 平台工程仓库的第一版代码骨架。
 
-本仓库坚持：
+当前目标不是实现完整平台，而是完成 **Sprint 0: Engineering Foundation**，确保核心 package 边界、类型接口和依赖方向可以真正开始编码。
 
-> **Markdown 是唯一文档源（Single Source of Truth）。**
-
-所有 Word、PDF、HTML、PPT、文档站内容都应从本仓库的 Markdown、Schema、Diagram 和 Reference Artifact 派生。
-
----
-
-## 文档层级
+## 当前包含
 
 ```text
-CIAP-0000 Meta Model
-        ↓
-CIAP-0001 Constitution
-        ↓
-CIAP-0002 Terminology
-        ↓
-CIAP-0003 Product Boundary
-        ↓
-CIAP-0004 Design Principles
-        ↓
-Architecture
-        ↓
-Specification
-        ↓
-SDK / Runtime / Platform / Studio
-        ↓
-Reference Implementation
+packages/
+├── core
+├── contracts
+├── world-model
+├── operational-state
+├── process-model
+├── behavior-model
+├── policy-sdk
+├── simulation-kernel
+├── decision-engine
+├── runtime-core
+├── scene-runtime
+├── connector-sdk
+└── product-sdk
+
+plugins/
+├── routing-a-star
+├── dispatch-nearest
+└── queue-fifo
+
+apps/
+└── runtime-web
+
+examples/
+└── mini-auto-factory
 ```
 
-若下层文档与上层文档发生冲突，应以上层文档为准。
-
----
-
-## 当前版本
-
-**Repository Version:** v0.1.0  
-**Status:** Draft  
-**Focus:** Foundation Freeze
-
-第一版优先冻结五份根文档：
-
-- `CIAP-0000` Meta Model
-- `CIAP-0001` Constitution
-- `CIAP-0002` Terminology
-- `CIAP-0003` Product Boundary
-- `CIAP-0004` Design Principles
-
----
-
-## 本地预览
+## 安装
 
 ```bash
-python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-
-# macOS / Linux
-source .venv/bin/activate
-
-pip install -r requirements.txt
-mkdocs serve
+corepack enable
+pnpm install
 ```
 
-打开：
-
-```text
-http://127.0.0.1:8000
-```
-
----
-
-## 构建静态站点
+## Build
 
 ```bash
-mkdocs build --strict
+pnpm build
 ```
 
-输出：
-
-```text
-site/
-```
-
----
-
-## 初始化 GitHub 仓库
-
-如果下载的是 ZIP：
+## Type Check
 
 ```bash
-git init
-git add .
-git commit -m "chore: initialize CIAP Standard repository"
-git branch -M main
-
-git remote add origin https://github.com/<org>/ciap-standard.git
-git push -u origin main
+pnpm typecheck
 ```
 
----
+## Test
 
-## 修改流程
-
-普通内容修改：
-
-```text
-Issue
-→ Branch
-→ Pull Request
-→ Review
-→ Merge
+```bash
+pnpm test
 ```
 
-涉及以下内容必须先走 RFC / ADR：
+## Sprint 0 验收
 
-- 核心对象新增或删除
-- Meta Model 关系变化
-- Constitution 修改
-- Runtime Contract 修改
-- Flow DSL 核心语义修改
-- Product Recipe 核心结构修改
-- Event Envelope 修改
-- 跨团队公共 Contract Breaking Change
+- [x] Monorepo 结构
+- [x] pnpm workspace
+- [x] Turborepo
+- [x] TypeScript strict mode
+- [x] Vitest
+- [x] Changesets
+- [x] GitHub Actions
+- [x] `@ciap/core`
+- [x] `@ciap/contracts`
+- [x] `@ciap/world-model`
+- [x] `@ciap/operational-state`
+- [x] `@ciap/policy-sdk`
+- [x] 其余核心 package scaffold
+- [x] Mini Automotive Factory reference data
 
----
-
-## 仓库目录
-
-```text
-docs/            文档正文
-schemas/         JSON Schema
-diagrams/        Mermaid / PlantUML / SVG
-examples/        参考示例
-templates/       文档与设计模板
-scripts/         构建与校验脚本
-.github/          GitHub Actions / Issue / PR 模板
-```
-
----
-
-## 核心开发原则
-
-> Contract First  
-> Composition Before Duplication  
-> Runtime Neutrality  
-> Single Source of Truth  
-> AI Under Governance  
-> Backward Compatibility by Default
+下一步：Sprint 1 — Single Machine Vertical Slice。

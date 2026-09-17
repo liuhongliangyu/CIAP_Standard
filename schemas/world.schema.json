@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ciap.local/schemas/world.schema.json",
+  "title": "CIAP World",
+  "type": "object",
+  "required": [
+    "world"
+  ],
+  "properties": {
+    "world": {
+      "type": "object",
+      "required": [
+        "id",
+        "coordinateSystem",
+        "unit"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "coordinateSystem": {
+          "const": "metric"
+        },
+        "unit": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

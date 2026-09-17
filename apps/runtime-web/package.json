@@ -1,0 +1,22 @@
+{
+  "name": "@ciap-app/runtime-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "lint": "eslint src --ext .ts",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ciap/runtime-core": "workspace:*",
+    "@ciap/scene-runtime": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "workspace:^",
+    "vitest": "workspace:^"
+  }
+}

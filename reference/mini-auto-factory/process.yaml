@@ -1,0 +1,26 @@
+process:
+  id: suv-basic-process
+  version: 0.1.0
+
+operations:
+  - id: body
+    requiredCapabilities: [production.body]
+    durationModel:
+      type: deterministic
+      valueMs: 60000
+
+  - id: assembly
+    requiredCapabilities: [production.assembly]
+    durationModel:
+      type: deterministic
+      valueMs: 90000
+
+  - id: quality
+    requiredCapabilities: [quality.inspection]
+    durationModel:
+      type: deterministic
+      valueMs: 45000
+
+transitions:
+  - { from: body, to: assembly }
+  - { from: assembly, to: quality }

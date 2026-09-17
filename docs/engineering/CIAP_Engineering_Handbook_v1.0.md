@@ -14,14 +14,14 @@
 
 适用对象：
 
-- Module Developer；
-- Runtime Developer；
-- Platform Developer；
-- Studio Developer；
-- Product Developer；
-- AI Coding Agent；
-- Reviewer；
-- Architecture Owner。
+- Module Developer；模块开发者
+- Runtime Developer；运行时开发者
+- Platform Developer；平台开发者
+- Studio Developer；工作室开发者
+- Product Developer；产品开发人员
+- AI Coding Agent；AI编码代码
+- Reviewer；评审员
+- Architecture Owner。架构负责人
 
 所有进入 CIAP 主分支的代码和设计，都应满足本手册。
 
@@ -53,24 +53,24 @@
 公共行为的标准顺序：
 
 ```text
-Requirement
+Requirement-需求
 ↓
-Contract
+Contract-合约
 ↓
-Schema
+Schema-模式图
 ↓
-Test
+Test-测试
 ↓
-Implementation
+Implementation-实现
 ↓
-Adapter
+Adapter-适配器
 ```
 
 没有 Contract，不得开始公共接口实现。
 
 ---
 
-## Rule 3 — Module Owns State
+## Rule 3 — Module Owns State：模块拥有状态
 
 一个业务状态只能有一个明确 Module Owner。
 
@@ -90,7 +90,7 @@ Action / Event / Contract
 
 ---
 
-## Rule 4 — Flow Owns Process
+## Rule 4 — Flow Owns Process：流程拥有流程
 
 跨多个 Capability 的流程必须进入 Flow。
 
@@ -104,30 +104,30 @@ Action / Event / Contract
 
 ---
 
-## Rule 5 — Adapter Owns Presentation
+## Rule 5 — Adapter Owns Presentation：适配器拥有演示/成果
 
 Web / Unity / Unreal 的表现差异放在 Adapter。
 
 Domain 不知道：
 
-- DOM；
+- DOM；文档对象模型
 - Three.js；
-- GameObject；
-- Actor；
-- UI Framework。
+- GameObject；游戏对象
+- Actor；Unreal的角色
+- UI Framework。用户界面框架
 
 ---
 
-## Rule 6 — Runtime Never Owns Business
+## Rule 6 — Runtime Never Owns Business：运行时从不拥有业务
 
 Runtime Core 中禁止出现：
 
 ```text
-warehouse
-production
-machineBusiness
-customerA
-MESRule
+warehouse-仓库
+production-生产
+machineBusiness-机器业务
+customerA-客户A
+MESRule-制造执行系统规则
 ```
 
 如果只有某个 Product 需要：
@@ -136,7 +136,7 @@ MESRule
 
 ---
 
-## Rule 7 — Composition Before Duplication
+## Rule 7 — Composition Before Duplication：复制前的组合
 
 发现已有 Capability 时：
 
@@ -145,9 +145,9 @@ MESRule
 不允许默认：
 
 ```text
-copy module
-rename
-modify
+copy module-复制模块
+rename-重命名
+modify-修改
 ```
 
 ---

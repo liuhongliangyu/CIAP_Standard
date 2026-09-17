@@ -1,0 +1,174 @@
+{
+  "id": "mini-auto-factory",
+  "coordinateSystem": "metric",
+  "unit": "meter",
+  "entities": [
+    {
+      "id": "body-01",
+      "type": "machine.body",
+      "spatial": {
+        "position": [
+          20,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "assembly-01",
+      "type": "machine.assembly",
+      "spatial": {
+        "position": [
+          50,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "quality-01",
+      "type": "machine.quality",
+      "spatial": {
+        "position": [
+          80,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "agv-01",
+      "type": "mobile.agv"
+    },
+    {
+      "id": "agv-02",
+      "type": "mobile.agv"
+    },
+    {
+      "id": "agv-03",
+      "type": "mobile.agv"
+    },
+    {
+      "id": "forklift-01",
+      "type": "mobile.forklift"
+    }
+  ],
+  "zones": [
+    {
+      "id": "raw-warehouse",
+      "type": "warehouse"
+    },
+    {
+      "id": "body-area",
+      "type": "production"
+    },
+    {
+      "id": "assembly-area",
+      "type": "production"
+    },
+    {
+      "id": "quality-area",
+      "type": "production"
+    },
+    {
+      "id": "finished-warehouse",
+      "type": "warehouse"
+    },
+    {
+      "id": "charging-area",
+      "type": "charging"
+    }
+  ],
+  "topologies": [
+    {
+      "id": "factory-nav",
+      "nodes": [
+        {
+          "id": "N-WH",
+          "position": [
+            0,
+            0,
+            20
+          ]
+        },
+        {
+          "id": "N-BODY",
+          "position": [
+            20,
+            0,
+            20
+          ]
+        },
+        {
+          "id": "N-ASSEMBLY",
+          "position": [
+            50,
+            0,
+            20
+          ]
+        },
+        {
+          "id": "N-QUALITY",
+          "position": [
+            80,
+            0,
+            20
+          ]
+        },
+        {
+          "id": "N-FG",
+          "position": [
+            100,
+            0,
+            20
+          ]
+        },
+        {
+          "id": "N-CHARGE",
+          "position": [
+            50,
+            0,
+            0
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "E1",
+          "from": "N-WH",
+          "to": "N-BODY",
+          "distance": 20,
+          "bidirectional": true
+        },
+        {
+          "id": "E2",
+          "from": "N-BODY",
+          "to": "N-ASSEMBLY",
+          "distance": 30,
+          "bidirectional": true
+        },
+        {
+          "id": "E3",
+          "from": "N-ASSEMBLY",
+          "to": "N-QUALITY",
+          "distance": 30,
+          "bidirectional": true
+        },
+        {
+          "id": "E4",
+          "from": "N-QUALITY",
+          "to": "N-FG",
+          "distance": 20,
+          "bidirectional": true
+        },
+        {
+          "id": "E5",
+          "from": "N-ASSEMBLY",
+          "to": "N-CHARGE",
+          "distance": 20,
+          "bidirectional": true
+        }
+      ]
+    }
+  ]
+}

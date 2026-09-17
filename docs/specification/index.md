@@ -1,5 +1,7 @@
 # Specification
 
+技术标准是什么
+
 ## Core v0.2 documents
 
 - [CIAP-2000 Capability Specification](CIAP-2000-Capability-Spec.md)

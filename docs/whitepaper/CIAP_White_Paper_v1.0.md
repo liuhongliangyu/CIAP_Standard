@@ -25,19 +25,19 @@ CIAP 试图解决的不是“如何让开发更快写代码”，而是更根本
 CIAP 的目标不是再做一个新的 MES、WMS、数字孪生平台或低代码平台，而是建立一套统一的软件组织方式：
 
 ```text
-Capability
+Capability（能力）
     ↓
-Module
+Module（模块）
     ↓
-Contract
+Contract（合约）
     ↓
-Flow
+Flow（流程）
     ↓
-Scene
+Scene（场景）
     ↓
-Product
+Product（产品）
     ↓
-Runtime
+Runtime（运行）
 ```
 
 在这一体系下：
@@ -172,13 +172,13 @@ AI 让复制和修改更快。
 
 AI 非常适合：
 
-- 根据 Contract 生成 Module；
-- 根据 Schema 生成 API；
+- 根据 Contract （合约）生成 Module（模块）；
+- 根据 Schema （模式）生成 API；
 - 生成单元测试；
-- 生成 Runtime Adapter；
-- 生成 Flow Draft；
-- 生成 Scene Draft；
-- 分析 Breaking Change；
+- 生成 Runtime Adapter（运行时适配器）；
+- 生成 Flow Draft（流程草稿）；
+- 生成 Scene Draft（场景草稿）；
+- 分析 Breaking Change（突破性变更）；
 - 生成迁移方案。
 
 但 AI 要真正提高研发体系效率，有一个前提：
@@ -187,13 +187,13 @@ AI 非常适合：
 
 如果一个项目没有明确：
 
-- Capability；
-- Contract；
-- Module Boundary；
-- Runtime Boundary；
-- Flow；
-- Scene；
-- Product Recipe；
+- Capability（能力）；
+- Contract（合约）；
+- Module Boundary（模块边界）；
+- Runtime Boundary（运行时边界）；
+- Flow（流程）；
+- Scene（场景）；
+- Product Recipe（场景配方）；
 
 那么 AI 只能依赖自然语言和上下文猜测。
 
@@ -216,17 +216,17 @@ CIAP 不把 AI 定位为“自由写代码的工程师”，而是：
 ```text
 AI
 ↓
-读取 Contract / Specification
+读取 Contract（合约） / Specification（规范）
 ↓
-生成 Draft / Implementation
+生成 Draft（草稿） / Implementation（实现）
 ↓
-自动 Test
+自动 Test（测试）
 ↓
-Architecture Check
+Architecture Check（架构检查）
 ↓
-Human / Policy Review
+Human（人工） / Policy Review（政策审查）
 ↓
-Merge / Release
+Merge（合并） / Release（发布）
 ```
 
 ---
@@ -248,12 +248,12 @@ Capability 回答：
 例如：
 
 ```text
-warehouse.inventory
-warehouse.location
-production.workorder
-device.machine
-quality.inspection
-alarm.management
+warehouse.inventory-仓库库存
+warehouse.location-仓库位置
+production.workorder-生产工单
+device.machine-设备机器
+quality.inspection-质量检验
+alarm.management-报警管理
 ```
 
 Capability 是业务语义，不是代码实现。
@@ -286,18 +286,18 @@ Module 不是一个“公共组件目录”。
 
 它们通过：
 
-- Action；
-- Event；
-- Interaction；
-- Data Contract；
-- Permission；
+- Action（动作）；
+- Event（事件）；
+- Interaction（交互）；
+- Data Contract（数据合约）；
+- Permission（权限）；
 
 协作。
 
 例如：
 
 ```text
-warehouse.inventory.reserve
+warehouse.inventory.reserve-仓储库存预留
 ```
 
 而不是：
@@ -346,14 +346,14 @@ CIAP 面向的是大量 2D + 3D 工业交互软件，因此必须把 Scene 作�
 
 Scene 负责：
 
-- 2D Slot；
-- 3D World；
-- Layer；
-- Entity Projection；
-- Asset；
-- Interaction；
-- Camera Request；
-- Overlay。
+- 2D Slot（2D插槽）；
+- 3D World（3D世界）；
+- Layer（图层）；
+- Entity Projection（实体投影）；
+- Asset（资源）；
+- Interaction（交互）；
+- Camera Request（相机请求）；
+- Overlay（覆盖层）。
 
 Scene 不负责业务真实状态。
 
@@ -366,17 +366,17 @@ Product 不再是“一套独立源码”。
 Product 是：
 
 ```text
-Modules
+Modules-模块
 +
-Flows
+Flows-流程
 +
-Scenes
+Scenes-场景
 +
-Runtime Target
+Runtime Target-运行时目标
 +
-Roles
+Roles-角色
 +
-Configuration
+Configuration-配置
 ```
 
 的组合。
@@ -451,15 +451,15 @@ Platform 是控制面。
 
 负责：
 
-- Registry；
-- Compiler；
-- Flow Engine；
-- Product Service；
-- Release；
-- Policy；
-- Audit；
-- Compatibility；
-- Asset Metadata。
+- Registry-注册表；
+- Compiler-编译器；
+- Flow Engine-流引擎；
+- Product Service-产品服务；
+- Release-发布；
+- Policy-策略；
+- Audit-审计；
+- Compatibility-兼容性；
+- Asset Metadata-资产元数据。
 
 它负责管理企业沉淀的软件能力资产。
 
@@ -472,13 +472,13 @@ Studio 是面向用户和研发人员的可视化工作台。
 包括：
 
 ```text
-Product Composer
-Flow Designer
-Scene Composer
-Module Browser
-Governance Workspace
-Release Center
-AI Center
+Product Composer-产品编排器
+Flow Designer-流程设计器
+Scene Composer-场景编排器
+Module Browser-模块浏览器
+Governance Workspace-治理工作区
+Release Center-发布中心
+AI Center-人工智能中心
 ```
 
 但 Studio 不是运行时。
@@ -491,27 +491,27 @@ Studio 挂掉，已经发布的软件仍然应该运行。
 
 假设企业当前存在两个软件：
 
-## Warehouse Standard
+## Warehouse Standard-仓库标准
 
 包含：
 
 ```text
-Inventory
-Location
-Inbound
-Outbound
-Alarm
+Inventory-库存
+Location-位置
+Inbound-入库
+Outbound-出库
+Alarm-报警
 ```
 
-## Production Standard
+## Production Standard-生产标准
 
 包含：
 
 ```text
-WorkOrder
-Machine
-Quality
-Alarm
+WorkOrder-工单
+Machine-设备
+Quality-质量/质检
+Alarm/报警
 ```
 
 过去，如果要做一个 Factory Logistics 软件，通常会：
@@ -525,11 +525,11 @@ Alarm
 CIAP 希望改成：
 
 ```text
-warehouse.inventory
-warehouse.outbound
-production.workorder
-device.machine
-quality.inspection
+warehouse.inventory-仓库库存
+warehouse.outbound-仓库出库
+production.workorder-生产工单
+device.machine-设备-机器
+quality.inspection-质量检验
 ```
 
 直接组合。
@@ -537,25 +537,25 @@ quality.inspection
 业务 Flow：
 
 ```text
-Reserve Inventory
+Reserve Inventory-预留库存
 ↓
-Outbound
+Outbound-出库
 ↓
-Create WorkOrder
+Create WorkOrder-创建工单
 ↓
-Select Machine
+Select Machine-选择设备
 ↓
-Start Machine
+Start Machine-启动设备
 ↓
-Wait Completed
+Wait Completed-等待完成
 ↓
-Inspect
+Inspect-检查
 ```
 
 最终形成：
 
 ```text
-Factory Logistics
+Factory Logistics-工厂物流
 ```
 
 最关键的验收标准：
@@ -571,23 +571,23 @@ Factory Logistics
 传统低代码通常围绕：
 
 ```text
-Page
-Form
-Table
-CRUD
-Workflow
+Page-页面
+Form-表单
+Table-表格
+CRUD-创建、读取、更新、删除
+Workflow-工作流
 ```
 
 CIAP 围绕：
 
 ```text
-Capability
-Module
-Contract
-Flow
-Scene
-Product
-Runtime
+Capability-能力
+Module-模块
+Contract-合约
+Flow-流程
+Scene-场景
+Product-产品
+Runtime-运行时
 ```
 
 CIAP 不以“更快做一个页面”为核心目标。
@@ -619,7 +619,7 @@ CIAP 更关注：
 CIAP 的 MVP 甚至优先采用：
 
 ```text
-Modular Monolith
+Modular Monolith：模块化单体结构
 ```
 
 而不是一开始拆微服务。
@@ -701,27 +701,27 @@ CIAP 第一阶段必须克制范围。
 建议范围：
 
 ```text
-CIAP SDK
-CIAP CLI
-Registry
-Compiler
-Flow Engine
-Web Runtime
-Reference Modules
-Reference Products
+CIAP SDK-软件开发工具包
+CIAP CLI-命令行界面
+Registry-注册表
+Compiler-编译器
+Flow Engine-流引擎
+Web Runtime-web运行时
+Reference Modules-参考模块
+Reference Products-参考产品
 ```
 
-首批 Reference Modules：
+首批 Reference Modules：参考模块
 
 ```text
-warehouse.inventory
-warehouse.location
-warehouse.inbound
-warehouse.outbound
-production.workorder
-device.machine
-quality.inspection
-alarm.management
+warehouse.inventory-仓库库存
+warehouse.location-仓库位置
+warehouse.inbound-仓库入库
+warehouse.outbound-仓库出库
+production.workorder-生产工单
+device.machine-设备·机器
+quality.inspection-质量检验
+alarm.management-报警管理
 ```
 
 ---
@@ -756,7 +756,7 @@ CIAP 建设建议分四个阶段。
 
 ---
 
-## Phase 1 — Composable Core
+## Phase 1 — Composable Core-可组合核心
 
 目标：
 
@@ -764,15 +764,15 @@ CIAP 建设建议分四个阶段。
 
 交付：
 
-- Standard；
-- SDK；
-- CLI；
-- Registry；
-- Compiler；
-- Flow Engine；
-- Web Runtime；
-- Reference Modules；
-- 三个 Reference Products。
+- Standard；标准
+- SDK；软件开发工具包
+- CLI；命令行界面
+- Registry；注册表
+- Compiler；编译器
+- Flow Engine；流引擎
+- Web Runtime；web运行时
+- Reference Modules；参考模块
+- 三个 Reference Products。三个参考产品
 
 效果：
 
@@ -780,7 +780,7 @@ CIAP 建设建议分四个阶段。
 
 ---
 
-## Phase 2 — Platformization
+## Phase 2 — Platformization-平台化
 
 目标：
 
@@ -788,14 +788,14 @@ CIAP 建设建议分四个阶段。
 
 交付：
 
-- Product Service；
-- Release；
-- Governance；
-- Compatibility；
-- Observability；
-- Studio MVP；
-- Product Composer；
-- Flow Designer。
+- Product Service；产品服务
+- Release；发布
+- Governance；治理
+- Compatibility；兼容性
+- Observability；可观测性
+- Studio MVP；工作室MVP
+- Product Composer；产品作曲家
+- Flow Designer。流程设计师
 
 效果：
 
@@ -803,19 +803,19 @@ CIAP 建设建议分四个阶段。
 
 ---
 
-## Phase 3 — Multi-Runtime
+## Phase 3 — Multi-Runtime-多运行时
 
 目标：
 
-> 验证 Runtime Neutrality。
+> 验证 Runtime Neutrality-运行时中立性。
 
 交付：
 
-- Unity Runtime；
-- Runtime Certification；
-- Asset Variant；
-- Scene Portability；
-- Product Portability。
+- Unity Runtime；Unity运行时
+- Runtime Certification；运行时认证
+- Asset Variant；资产变体
+- Scene Portability；场景可移植性
+- Product Portability。产品可移植性
 
 效果：
 
@@ -823,7 +823,7 @@ CIAP 建设建议分四个阶段。
 
 ---
 
-## Phase 4 — Ecosystem
+## Phase 4 — Ecosystem-生态系统
 
 目标：
 
@@ -831,12 +831,12 @@ CIAP 建设建议分四个阶段。
 
 交付：
 
-- Marketplace；
-- External SDK；
-- Connector；
-- AI Agent；
-- Edge；
-- Partner Development。
+- Marketplace；市场平台
+- External SDK；外部SDK
+- Connector；连接器
+- AI Agent；AI代理
+- Edge；边缘
+- Partner Development。合作伙伴开发
 
 效果：
 
@@ -850,63 +850,63 @@ CIAP 建设建议分四个阶段。
 
 ---
 
-## Architecture Owner
+## Architecture Owner：架构负责人
 
 负责：
 
-- Constitution；
-- Capability Boundary；
-- Contract Review；
-- ADR；
-- Breaking Change；
-- Architecture Gate。
+- Constitution；“宪法”
+- Capability Boundary；能力边界
+- Contract Review；合约评审
+- ADR；ADR
+- Breaking Change；突破变更
+- Architecture Gate。架构门槛
 
 ---
 
-## Platform Owner
+## Platform Owner：平台负责人
 
 负责：
 
-- Registry；
-- Compiler；
-- Flow；
-- Release；
-- Policy。
+- Registry；注册表
+- Compiler；编译器
+- Flow；流程
+- Release；发布
+- Policy。政策
 
 ---
 
-## Runtime Owner
+## Runtime Owner：运行时负责人
 
 负责：
 
-- Web Runtime；
-- Unity Runtime；
-- Runtime SDK；
-- Scene Runtime；
-- Entity Runtime。
+- Web Runtime；web运行时
+- Unity Runtime；unity运行时
+- Runtime SDK；运行时SDK
+- Scene Runtime；场景运行时
+- Entity Runtime。实体运行时
 
 ---
 
-## Module Owner
+## Module Owner：模块负责人
 
 负责：
 
-- Capability Implementation；
-- Contract；
-- Tests；
-- Runtime Adapter；
-- Changelog。
+- Capability Implementation；能力实现
+- Contract；合约
+- Tests；测试
+- Runtime Adapter；运行时适配器
+- Changelog。变更日志
 
 ---
 
-## Product Owner
+## Product Owner：产品负责人
 
 负责：
 
-- Product Recipe；
-- Flow；
-- Scene；
-- Acceptance。
+- Product Recipe；产品配方
+- Flow；流程
+- Scene；场景
+- Acceptance。验收
 
 ---
 
@@ -914,12 +914,12 @@ CIAP 建设建议分四个阶段。
 
 AI 可以承担：
 
-- Contract Draft；
-- Module Implementation；
-- Adapter；
-- Test；
-- Docs；
-- Architecture Check。
+- Contract Draft；合约草案
+- Module Implementation；模块实现
+- Adapter；适配器
+- Test；测试
+- Docs；文档
+- Architecture Check。架构检查
 
 但 AI 不拥有架构最终决策权。
 
@@ -957,23 +957,23 @@ CIAP 不应该以“平台写了多少代码”衡量。
 
 核心 KPI：
 
-## Composition Success Rate
+## Composition Success Rate：合约成功率
 
 新 Product 能否不修改原 Module 直接组合。
 
-## Module Reuse Rate
+## Module Reuse Rate：模块重用率
 
 Product 使用已有 Module 的比例。
 
-## Contract Breaking Rate
+## Contract Breaking Rate：合约违约率
 
 公共 Contract 是否频繁破坏。
 
-## New Product Lead Time
+## New Product Lead Time：新产品交货日期
 
 从需求到可运行 Product 的时间是否持续下降。
 
-## Runtime Portability
+## Runtime Portability：运行时可移植性
 
 同一业务语义是否能够迁移到不同 Runtime。
 

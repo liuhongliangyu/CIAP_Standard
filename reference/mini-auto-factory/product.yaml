@@ -1,0 +1,21 @@
+product:
+  id: mini-auto-factory-demo
+  version: 0.1.0
+
+runtime:
+  target: web
+
+world:
+  id: mini-auto-factory
+
+processes:
+  - suv-basic-process
+
+policies:
+  file: policies.yaml
+
+scenario:
+  id: baseline-001
+
+scene:
+  id: mini-auto-factory-main

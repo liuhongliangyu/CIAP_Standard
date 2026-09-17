@@ -1,0 +1,28 @@
+scenario:
+  id: baseline-001
+  mode: SIMULATION
+  duration: 28800000
+  randomSeed: 1001
+
+orders:
+  - id: order-001
+    productType: suv
+    quantity: 10
+    releaseTime: 0
+
+mobileAgents:
+  agv-01:
+    maxSpeed: 1.5
+    batteryKWh: 20
+    initialSOC: 100
+    energyConsumptionKWhPerKm: 0.15
+  agv-02:
+    maxSpeed: 1.5
+    batteryKWh: 20
+    initialSOC: 100
+    energyConsumptionKWhPerKm: 0.15
+  agv-03:
+    maxSpeed: 1.5
+    batteryKWh: 20
+    initialSOC: 100
+    energyConsumptionKWhPerKm: 0.15

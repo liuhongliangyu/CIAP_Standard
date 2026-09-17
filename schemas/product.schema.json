@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ciap.local/schemas/product.schema.json",
+  "title": "CIAP Product",
+  "type": "object",
+  "required": [
+    "product",
+    "runtime",
+    "world"
+  ],
+  "properties": {
+    "product": {
+      "type": "object",
+      "required": [
+        "id",
+        "version"
+      ]
+    },
+    "runtime": {
+      "type": "object",
+      "required": [
+        "target"
+      ]
+    },
+    "world": {
+      "type": "object",
+      "required": [
+        "id"
+      ]
+    }
+  }
+}
