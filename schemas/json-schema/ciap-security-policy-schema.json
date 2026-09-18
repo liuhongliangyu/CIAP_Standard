@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Security Policy",
+  "type": "object",
+  "required": [
+    "identity",
+    "permissions"
+  ],
+  "properties": {
+    "identity": {
+      "type": "string"
+    },
+    "permissions": {
+      "type": "array"
+    }
+  }
+}

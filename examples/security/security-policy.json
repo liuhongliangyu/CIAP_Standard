@@ -1,0 +1,8 @@
+{
+  "identity": "device001",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "encryption": "required"
+}
