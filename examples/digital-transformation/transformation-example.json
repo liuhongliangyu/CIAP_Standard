@@ -1,0 +1,10 @@
+{
+  "name": "industrial-digital-transformation",
+  "version": "1.0.0",
+  "maturity": "advanced",
+  "capabilities": [
+    "digital-platform",
+    "ai-operation",
+    "data-intelligence"
+  ]
+}
