@@ -1,0 +1,10 @@
+{
+  "name": "industrial-maintenance-app",
+  "version": "1.0.0",
+  "type": "industrial-application",
+  "services": [
+    "digital-twin",
+    "analytics",
+    "maintenance"
+  ]
+}
