@@ -1,0 +1,10 @@
+{
+  "name": "ciap-global-standard",
+  "version": "1.0.0",
+  "scope": "industrial-autonomous-platform",
+  "components": [
+    "specification",
+    "certification",
+    "interoperability"
+  ]
+}

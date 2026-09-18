@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Global Standardization",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "scope"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    }
+  }
+}
