@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Release Package",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "documents"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "array"
+    }
+  }
+}

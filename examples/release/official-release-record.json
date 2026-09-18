@@ -1,0 +1,10 @@
+{
+  "name": "CIAP Standard",
+  "version": "1.0.0",
+  "status": "official-release",
+  "documents": [
+    "specification",
+    "schema",
+    "examples"
+  ]
+}
