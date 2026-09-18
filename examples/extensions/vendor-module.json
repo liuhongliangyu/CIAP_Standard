@@ -1,0 +1,8 @@
+{
+  "namespace": "vendor.example",
+  "name": "temperature-plus",
+  "version": "1.0.0",
+  "capabilities": [
+    "advanced-temperature-analysis"
+  ]
+}
