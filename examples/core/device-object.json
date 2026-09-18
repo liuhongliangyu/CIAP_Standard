@@ -1,0 +1,15 @@
+{
+  "id": "ciap://factory/device/motor001",
+  "type": "device",
+  "version": "1.0.0",
+  "metadata": {
+    "name": "Motor Controller"
+  },
+  "capabilities": [
+    "temperature-monitor",
+    "speed-control"
+  ],
+  "state": {
+    "running": true
+  }
+}

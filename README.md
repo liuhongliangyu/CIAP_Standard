@@ -497,3 +497,108 @@ Product Recipe
 - Web Runtime Contract
 - Studio 基础边界
 
+# CIAP_Standard Refactoring Plan v0.1
+
+目标：
+稳定 CIAP 平台工程边界，为 Sprint 5+ 开发准备。
+
+本版本不是重写代码，而是定义：
+- 保留
+- 移动
+- 新增
+- 拆分
+- 删除
+
+原则：
+
+Domain / Runtime / Presentation / Plugin 分离。
+
+# CIAP_Standard Refactoring v0.2
+
+目标：
+将 CIAP_Standard 从 Sprint 4 平台雏形调整为 Platform Foundation v0.2。
+
+本版本重点：
+
+- 稳定 Monorepo 边界
+- 增加缺失核心 Package
+- 清理 Domain / Runtime / Presentation 边界
+- 为 Studio、Live Connector、Experiment 做准备
+
+
+新增：
+
+packages/
+- flow-engine
+- mobile-agent
+- experiment-engine
+- asset-runtime
+
+
+调整：
+
+src/
+取消作为业务代码入口。
+
+所有业务能力进入 packages。
+
+# CIAP Sprint 5 - Studio + Runtime v0.1
+
+目标：
+将 CIAP 从平台内核推进到用户可操作产品。
+
+核心：
+
+Studio:
+- World Designer
+- Entity Designer
+- Process Designer
+- Policy Designer
+- Scenario Designer
+
+Runtime:
+- Product Loader
+- World Loader
+- Runtime Core
+- Scene Runtime
+- Web Projection
+
+
+用户流程：
+
+Create Product
+ -> Configure World
+ -> Select Policy
+ -> Select Scenario
+ -> Run Simulation
+ -> Observe Runtime
+ -> Analyze KPI
+
+# CIAP Sprint 6 - Live Connector + Digital Twin v0.1
+
+目标：
+将 CIAP 从纯仿真平台推进为 Simulation + Live Twin 平台。
+
+核心：
+
+Simulation:
+虚拟事件产生状态
+
+Live:
+真实设备产生状态
+
+Hybrid:
+真实与虚拟混合运行
+
+Replay:
+历史事件重放
+
+
+新增：
+
+- Connector Runtime
+- Twin Sync
+- Live State Provider
+- MQTT Connector Boundary
+- OPC UA Connector Boundary
+- MES/WMS Adapter Boundary

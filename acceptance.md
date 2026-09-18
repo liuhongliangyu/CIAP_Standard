@@ -91,3 +91,82 @@ CIAP Demo Platform v1
 - Strategy Marketplace
 - Live Connector
 
+
+# Sprint 5 Acceptance
+
+
+## Studio
+
+[x] 可以定义 World
+
+[x] 可以定义 Entity
+
+[x] 可以绑定 Process
+
+[x] 可以选择 Policy
+
+[x] 可以创建 Scenario
+
+
+## Runtime
+
+[x] 可以加载 Product
+
+[x] 可以启动运行
+
+[x] 可以输出状态
+
+
+## Architecture
+
+[x] Studio 不包含 Runtime Logic
+
+[x] Runtime 不依赖 UI
+
+[x] Scene 只做 Projection
+
+
+下一阶段：
+
+Sprint 6
+
+Live Connector + Digital Twin
+
+# Sprint 6 Acceptance
+
+
+## Connector
+
+[x] External protocol boundary exists
+
+[x] Canonical message defined
+
+
+## Twin
+
+[x] Simulation and Live share state model
+
+
+## Runtime
+
+[x] Supports:
+
+SIMULATION
+
+LIVE
+
+HYBRID
+
+REPLAY
+
+
+## Architecture
+
+[x] External systems do not bypass Runtime
+
+
+Next:
+
+Sprint 7
+
+Optimization + AI + Marketplace

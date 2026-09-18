@@ -15,3 +15,4 @@ All notable changes to CIAP Standard are documented here.
 - CIAP-0002 Terminology
 - CIAP-0003 Product Boundary
 - CIAP-0004 Design Principles
+- - Added governance structure

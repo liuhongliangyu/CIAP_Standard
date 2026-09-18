@@ -53,3 +53,7 @@ adr/*
 - [ ] Mermaid 可解析
 - [ ] 内部链接有效
 - [ ] 若涉及 Breaking Change，已有 RFC / ADR
+
+# Contributing
+
+Proposal -> Review -> Merge -> Release
