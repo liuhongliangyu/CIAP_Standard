@@ -1,0 +1,9 @@
+{
+  "name": "smart-manufacturing",
+  "version": "1.0.0",
+  "domain": "manufacturing",
+  "capabilities": [
+    "device-monitoring",
+    "production-data"
+  ]
+}
