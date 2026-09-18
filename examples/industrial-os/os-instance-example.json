@@ -1,0 +1,9 @@
+{
+  "name": "CIAP Industrial OS Instance",
+  "version": "1.0.0",
+  "components": [
+    "device-runtime",
+    "middleware",
+    "application-runtime"
+  ]
+}
