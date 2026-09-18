@@ -1,0 +1,10 @@
+{
+  "name": "smart-factory-platform",
+  "version": "1.0.0",
+  "domain": "manufacturing",
+  "services": [
+    "asset-management",
+    "production-management",
+    "maintenance-management"
+  ]
+}
