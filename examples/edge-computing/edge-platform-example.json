@@ -1,0 +1,9 @@
+{
+  "name": "ciap-industrial-edge-platform",
+  "version": "1.0.0",
+  "capabilities": [
+    "edge-runtime",
+    "edge-ai",
+    "device-management"
+  ]
+}
