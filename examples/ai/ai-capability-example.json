@@ -1,0 +1,9 @@
+{
+  "name": "predictive-maintenance-agent",
+  "version": "1.0.0",
+  "capability": "predictive-analysis",
+  "inputs": [
+    "device-data",
+    "historical-data"
+  ]
+}

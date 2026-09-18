@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP AI Capability",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "capability"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "capability": {
+      "type": "string"
+    }
+  }
+}
