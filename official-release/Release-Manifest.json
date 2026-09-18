@@ -1,0 +1,12 @@
+{
+  "name": "CIAP Standard",
+  "version": "1.0.0",
+  "status": "official",
+  "packages": [
+    "Core",
+    "Protocol",
+    "Data Model",
+    "Security",
+    "Compliance"
+  ]
+}

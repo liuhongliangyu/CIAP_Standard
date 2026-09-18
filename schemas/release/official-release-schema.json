@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Official Release",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "status"
+  ]
+}
