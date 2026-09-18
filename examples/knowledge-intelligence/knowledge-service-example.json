@@ -1,0 +1,9 @@
+{
+  "name": "industrial-knowledge-service",
+  "version": "1.0.0",
+  "capabilities": [
+    "semantic-search",
+    "reasoning",
+    "ai-assistant"
+  ]
+}
