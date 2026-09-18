@@ -1,0 +1,10 @@
+{
+  "id": "twin-machine-001",
+  "type": "industrial-equipment",
+  "version": "1.0.0",
+  "capabilities": [
+    "monitoring",
+    "simulation",
+    "optimization"
+  ]
+}
