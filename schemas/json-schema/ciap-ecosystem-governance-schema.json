@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Ecosystem Governance",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "governance"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "governance": {
+      "type": "string"
+    }
+  }
+}

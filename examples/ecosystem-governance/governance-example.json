@@ -1,0 +1,10 @@
+{
+  "name": "ciap-ecosystem-governance",
+  "version": "1.0.0",
+  "governance": "enterprise-community",
+  "areas": [
+    "standard",
+    "partner",
+    "certification"
+  ]
+}
