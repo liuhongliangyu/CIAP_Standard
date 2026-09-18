@@ -1,0 +1,10 @@
+{
+  "name": "ciap-industrial-marketplace",
+  "version": "1.0.0",
+  "category": "industrial-capability",
+  "services": [
+    "application",
+    "agent",
+    "data"
+  ]
+}

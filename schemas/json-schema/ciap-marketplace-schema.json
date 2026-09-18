@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Marketplace",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "category"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}
