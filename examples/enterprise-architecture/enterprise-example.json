@@ -1,0 +1,10 @@
+{
+  "name": "industrial-enterprise-architecture",
+  "version": "1.0.0",
+  "layers": [
+    "business",
+    "information",
+    "application",
+    "technology"
+  ]
+}
