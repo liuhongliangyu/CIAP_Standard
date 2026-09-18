@@ -1,0 +1,10 @@
+{
+  "name": "ciap-industrial-cloud-native-platform",
+  "version": "1.0.0",
+  "components": [
+    "microservice",
+    "container-runtime",
+    "service-mesh",
+    "observability"
+  ]
+}
