@@ -1,0 +1,10 @@
+{
+  "name": "CIAP Cloud Edge Deployment",
+  "type": "hybrid",
+  "version": "1.0.0",
+  "components": [
+    "cloud-platform",
+    "edge-runtime",
+    "device-management"
+  ]
+}
