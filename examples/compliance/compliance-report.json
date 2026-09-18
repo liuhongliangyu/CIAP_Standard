@@ -1,0 +1,9 @@
+{
+  "implementation": "CIAP Reference Device",
+  "result": "PASS",
+  "tests": [
+    "core-object-validation",
+    "protocol-validation",
+    "security-validation"
+  ]
+}
