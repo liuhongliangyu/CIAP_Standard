@@ -1,0 +1,10 @@
+{
+  "name": "ciap-reference-platform",
+  "version": "1.0.0",
+  "components": [
+    "runtime",
+    "sdk",
+    "validator",
+    "test-framework"
+  ]
+}
