@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Autonomous Capability",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "mode"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    }
+  }
+}

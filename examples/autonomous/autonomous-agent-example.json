@@ -1,0 +1,10 @@
+{
+  "name": "autonomous-maintenance-agent",
+  "version": "1.0.0",
+  "mode": "self-optimization",
+  "capabilities": [
+    "monitoring",
+    "diagnosis",
+    "optimization"
+  ]
+}
