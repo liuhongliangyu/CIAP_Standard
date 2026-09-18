@@ -1,0 +1,9 @@
+{
+  "name": "example-cloud-adapter",
+  "type": "cloud",
+  "version": "1.0.0",
+  "capabilities": [
+    "data-sync",
+    "remote-access"
+  ]
+}
