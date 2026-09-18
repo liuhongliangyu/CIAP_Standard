@@ -1,0 +1,10 @@
+{
+  "name": "ciap-developer-platform",
+  "version": "1.0.0",
+  "services": [
+    "sdk-center",
+    "api-management",
+    "documentation",
+    "cicd"
+  ]
+}
