@@ -1,0 +1,10 @@
+{
+  "name": "CIAP Demo Project",
+  "version": "1.0.0",
+  "type": "demo",
+  "components": [
+    "runtime",
+    "sdk",
+    "validator"
+  ]
+}
