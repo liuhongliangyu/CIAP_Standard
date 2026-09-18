@@ -1,0 +1,10 @@
+{
+  "name": "industrial-data-space",
+  "version": "1.0.0",
+  "domain": "manufacturing",
+  "services": [
+    "catalog",
+    "exchange",
+    "knowledge-graph"
+  ]
+}
