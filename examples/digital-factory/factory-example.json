@@ -1,0 +1,7 @@
+{
+  "name": "ciap-smart-factory",
+  "version": "1.0.0",
+  "factoryType": "discrete-manufacturing",
+  "productionLines": 4,
+  "autonomousLevel": "A3"
+}

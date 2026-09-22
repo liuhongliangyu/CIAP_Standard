@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Digital Factory",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "factoryType"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "factoryType": {
+      "type": "string"
+    },
+    "productionLines": {
+      "type": "integer"
+    },
+    "autonomousLevel": {
+      "type": "string"
+    }
+  }
+}
