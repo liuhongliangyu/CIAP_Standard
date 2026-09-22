@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Autonomous Enterprise",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "enterpriseLevel"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "enterpriseLevel": {
+      "type": "string"
+    },
+    "sites": {
+      "type": "integer"
+    },
+    "factories": {
+      "type": "integer"
+    },
+    "autonomyLevel": {
+      "type": "string"
+    }
+  }
+}

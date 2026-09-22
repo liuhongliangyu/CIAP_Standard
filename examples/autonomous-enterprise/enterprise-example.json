@@ -1,0 +1,8 @@
+{
+  "name": "ciap-autonomous-enterprise",
+  "version": "1.0.0",
+  "enterpriseLevel": "group",
+  "sites": 8,
+  "factories": 5,
+  "autonomyLevel": "A4"
+}
