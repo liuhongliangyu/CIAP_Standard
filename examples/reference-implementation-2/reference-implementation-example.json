@@ -1,0 +1,13 @@
+{
+  "name": "ciap-reference-implementation-2",
+  "version": "2.0.0",
+  "modules": [
+    "runtime",
+    "enterprise-services",
+    "factory-services",
+    "ai-framework",
+    "digital-twin"
+  ],
+  "deploymentProfile": "enterprise",
+  "conformanceLevel": "L3"
+}

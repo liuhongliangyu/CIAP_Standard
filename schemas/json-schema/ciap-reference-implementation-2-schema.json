@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Reference Implementation 2.0",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "modules"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deploymentProfile": {
+      "type": "string"
+    },
+    "conformanceLevel": {
+      "type": "string"
+    }
+  }
+}
