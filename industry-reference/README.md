@@ -1,0 +1,1 @@
+# CIAP Industry Reference Architectures
