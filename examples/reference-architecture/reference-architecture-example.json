@@ -1,0 +1,17 @@
+{
+  "name": "ciap-reference-architecture-2.0",
+  "version": "2.0.0",
+  "domains": [
+    "enterprise",
+    "factory",
+    "cloud",
+    "edge",
+    "device",
+    "ai"
+  ],
+  "profiles": [
+    "basic",
+    "enterprise",
+    "autonomous"
+  ]
+}
