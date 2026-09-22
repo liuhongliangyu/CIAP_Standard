@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Autonomous Operation",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "autonomyLevel",
+    "capabilities"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "autonomyLevel": {
+      "type": "string",
+      "enum": [
+        "advisory",
+        "human-approved",
+        "supervised-autonomous",
+        "policy-bounded-autonomous"
+      ]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "humanOverride": {
+      "type": "boolean"
+    },
+    "auditEnabled": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

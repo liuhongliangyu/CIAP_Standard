@@ -1,0 +1,14 @@
+{
+  "name": "ciap-autonomous-production-operation",
+  "version": "1.0.0",
+  "autonomyLevel": "supervised-autonomous",
+  "capabilities": [
+    "decision-engine",
+    "closed-loop-control",
+    "self-optimization",
+    "self-healing",
+    "human-ai-collaboration"
+  ],
+  "humanOverride": true,
+  "auditEnabled": true
+}
