@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Autonomous Assurance",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "assuranceLevel"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "assuranceLevel": {
+      "type": "string",
+      "enum": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ]
+    },
+    "humanOverride": {
+      "type": "boolean"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  }
+}

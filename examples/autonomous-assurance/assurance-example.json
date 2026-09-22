@@ -1,0 +1,7 @@
+{
+  "name": "ciap-autonomous-production-line",
+  "version": "1.0.0",
+  "assuranceLevel": "A3",
+  "humanOverride": true,
+  "verified": true
+}
