@@ -1,21 +1,9 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "CIAP Certification",
   "type": "object",
   "required": [
-    "organization",
-    "level",
-    "version"
-  ],
-  "properties": {
-    "organization": {
-      "type": "string"
-    },
-    "level": {
-      "type": "string"
-    },
-    "version": {
-      "type": "string"
-    }
-  }
+    "name",
+    "version",
+    "certificationLevel"
+  ]
 }
