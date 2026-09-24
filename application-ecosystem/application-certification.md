@@ -1,3 +1,8 @@
-# Application Certification
+# 应用认证 / Application Certification
 
-Defines application compliance and certification.
+定义工业应用认证要求：
+
+- 功能符合性
+- 安全符合性
+- 架构符合性
+- 性能验证

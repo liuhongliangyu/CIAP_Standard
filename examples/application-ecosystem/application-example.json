@@ -1,10 +1,6 @@
 {
-  "name": "industrial-maintenance-app",
+  "name": "CIAP Industrial Quality Application",
   "version": "1.0.0",
-  "type": "industrial-application",
-  "services": [
-    "digital-twin",
-    "analytics",
-    "maintenance"
-  ]
+  "applicationType": "industrial-ai",
+  "certified": true
 }
