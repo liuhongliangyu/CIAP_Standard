@@ -1,10 +1,12 @@
 {
-  "name": "ciap-ecosystem-governance",
+  "name": "ciap-global-ecosystem-governance",
   "version": "1.0.0",
-  "governance": "enterprise-community",
-  "areas": [
+  "governanceDomains": [
     "standard",
     "partner",
-    "certification"
-  ]
+    "developer",
+    "ai",
+    "security"
+  ],
+  "maturityLevel": "advanced"
 }

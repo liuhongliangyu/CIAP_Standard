@@ -5,7 +5,7 @@
   "required": [
     "name",
     "version",
-    "governance"
+    "governanceDomains"
   ],
   "properties": {
     "name": {
@@ -14,7 +14,13 @@
     "version": {
       "type": "string"
     },
-    "governance": {
+    "governanceDomains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "maturityLevel": {
       "type": "string"
     }
   }
