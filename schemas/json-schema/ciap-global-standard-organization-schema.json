@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Global Standard Organization",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "committees"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "committees": {
+      "type": "array"
+    },
+    "workingGroups": {
+      "type": "array"
+    }
+  }
+}

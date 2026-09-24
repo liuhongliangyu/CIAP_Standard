@@ -1,0 +1,13 @@
+{
+  "name": "CIAP Global Standard Organization",
+  "version": "1.0.0",
+  "committees": [
+    "Technical Committee",
+    "Governance Committee"
+  ],
+  "workingGroups": [
+    "AI WG",
+    "Data WG",
+    "Security WG"
+  ]
+}
