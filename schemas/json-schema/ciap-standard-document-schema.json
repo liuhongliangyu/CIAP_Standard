@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIAP Standard Document",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "documentType"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "documentType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
